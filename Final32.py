@@ -441,7 +441,7 @@ class Game:
                             self.vic_screen_cd = 0
                             self.counter = 0
                             # Calculates Score
-                            self.score = int(self.boss.orihealth * self.player.health * -(self.boss.health) / 1000000)
+                            self.score = int(self.difficulty * self.player.health)
                             self.vic_screen = True
                             for boss4bullet in self.boss4_bullets:
                                 self.boss4_bullets.remove(boss4bullet)
@@ -533,7 +533,7 @@ class Game:
                     current_time0 = pygame.time.get_ticks()
                     if current_time0 - self.cooldown_time1 > 500:
                         if event.button == 1:
-                            self.bullets.append(Bullet(self.player, self.mouse_x, self.mouse_y, 2000, 0))
+                            self.bullets.append(Bullet(self.player, self.mouse_x, self.mouse_y, 175, 0))
                         if event.button == 3:
                             self.bullets.append(Bullet(self.player, self.mouse_x, self.mouse_y, 75, 0))
                             self.bullets.append(Bullet(self.player, self.mouse_x, self.mouse_y, 75, 0.2))
@@ -542,7 +542,7 @@ class Game:
             #Player
             self.player.move(self.width, self.height)
             if self.player.health <= 0:
-                self.score = int(self.boss.orihealth * self.player.health * -(self.boss.health) / 1000000)
+                self.score = 0
                 self.counter = 0
                 self.end_screen = True
                 self.end_game()
