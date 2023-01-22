@@ -12,5 +12,6 @@
 - If the player losses if they are hit with a projectile dropping their health to 0.
 - If the player wins if the opposing slime health drops to 0 and survives its final attack. 
 
-## Demo Video
-Link: https://drive.google.com/file/d/1ixOtPRHXg2nactPnzNybrdChUlwX8wDK/view?usp=sharing
+## Links
+Report: https://docs.google.com/document/d/1hnyOa9B-omnpXE1qF2GiqaHFDuTlkxK9YeU0gLgMv4s/edit?usp=sharing
+Demo Video: https://drive.google.com/file/d/1ixOtPRHXg2nactPnzNybrdChUlwX8wDK/view?usp=sharing
